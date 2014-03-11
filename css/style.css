@@ -1,0 +1,72 @@
+h1{
+	padding-bottom:20px;
+}
+
+body {
+    background: none repeat scroll 0 0 #F9F9F9;
+    color: #666666;
+    font-family: Georgia,'Times New Roman',Times,serif;
+    font-size: 0.9em;
+    font-weight: normal;
+    line-height: 28px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 0 1px #AAAAAA;
+    margin: 20px auto 0;
+    max-width: 980px;
+    padding: 60px;
+}
+
+.photo-grid {
+    margin-top: 160px;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+}
+.photo-grid img {
+    background: none repeat scroll 0 0 #FFFFFF;
+    box-shadow: 0 0 5px black;
+    float: left;
+    height: 172px;
+    margin-top: -100px;
+    padding: 10px;
+    position: relative;
+    transition: all 0.4s ease-in 0s;
+    width: 172px;
+    z-index: 2;
+}
+.photo-grid img:nth-child(2n) {
+    transform: translate(10px, 0px) rotate(8deg);
+}
+.photo-grid img:nth-child(2n+1) {
+    left: 25px;
+    transform: translate(-10px, -30px) rotate(-5deg);
+}
+.photo-grid img:nth-child(3n) {
+    left: 17px;
+    top: -10px;
+    transform: translate(-10px, -30px) rotate(-15deg);
+}
+.photo-grid img:nth-child(5n) {
+    left: -8px;
+    top: 20px;
+}
+.photo-grid img:nth-child(6n) {
+    transform: translate(-10px, -30px) rotate(15deg);
+}
+.photo-grid img:nth-child(9n) {
+    transform: translate(-10px, -30px) rotate(22deg);
+}
+.photo-grid img:hover {
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.6);
+    transform: rotate(360deg) scale(1.5);
+    z-index: 10;
+}
